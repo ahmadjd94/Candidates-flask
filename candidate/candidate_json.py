@@ -1,8 +1,7 @@
 from marshmallow import Schema, fields
 
 
-
-class CandidateSchema(Schema):
+class CandidateJson(Schema):
     first_name = fields.Str(required=True)
     last_name = fields.Str()
     date_of_birth = fields.Date()
@@ -10,6 +9,5 @@ class CandidateSchema(Schema):
     department = fields.Str()
     resume = fields.Str()
 
-
-__all__ = (CandidateSchema,)
-
+    def save(self):
+        pass
