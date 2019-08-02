@@ -3,11 +3,7 @@ from sqlalchemy import Column, Integer, String, Date, DateTime
 from db.base import Base
 
 
-class Candidate(Base):
-    first_name = Column(String(50), unique=True)
-    last_name = Column(String(120), unique=True)
-    date_of_birth = Column(Date)
-    years_of_experience = Column(Integer())
+class Admin(Base):
     email = Column(String(255), unique=True, nullable=False)
     password = Column(String(255), nullable=False)
     registered_on = Column(DateTime, nullable=False)
@@ -19,4 +15,4 @@ class Candidate(Base):
         self.years_of_experience = yoe
 
     def __repr__(self):
-        return f'{self.first_name} {self.last_name}'
+        return self.email
