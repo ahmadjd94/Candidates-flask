@@ -22,6 +22,10 @@ install the project dependencies by running the following command:
 pip3 install - r requirements.txt
 ``
 
+###Note:
+https://stackoverflow.com/questions/43612243/install-mysqlclient-for-django-python-on-mac-os-x-sierra
+this is a useful link for users installing mysql client on mac
+
 install fake S3
 ````
 gem install fakes3

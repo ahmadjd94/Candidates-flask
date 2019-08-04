@@ -52,6 +52,7 @@
 import argparse
 
 from flask_app import flask_app
+from flask_app.db.base import Base
 
 
 def migrate():
@@ -73,8 +74,9 @@ if __name__ == "__main__":
 
     a = parser.parse_args()
 
-    # if a.migrate:
-    #     migrate()
+    if a.migrate:
+        base = Base()
+        res = base.migrate(Base.__class__, flask_app)
     if a.run:
         run()
 
