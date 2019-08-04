@@ -9,5 +9,3 @@ class CandidateJson(Schema):
     department = fields.Str()
     resume = fields.Str()
 
-    def save(self):
-        pass

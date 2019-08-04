@@ -32,7 +32,7 @@ before running FakeS3, obtain a free license key from  the following [link](http
 
 running fakeS3
 ````
-fakes3 -r /mnt/fakes3_root -p 4567 --license YOUR_LICENSE_KEY
+fakes3 -r /mnt/fakes3_root -p 4567 --license 6930221557
 ````
 
 download the mariaDb Docker image by running the following command:
